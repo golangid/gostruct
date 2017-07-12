@@ -14,13 +14,10 @@ gostruct will generate struct from your
 * [Getting Started](#getting-started)
 * [Example](#example)
 
-
-
-## Support
-
 You can file an [Issue](https://github.com/sumuttekno/gostruct/issues/new).
 
-
+## Support
+Currently only support Mysql for now.
 
 ## Getting Started
 
