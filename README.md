@@ -2,7 +2,7 @@
 
 Struct Generator from database
 
-gostruct will generate struct from your
+gostruct will generate struct from your DB
 
 [![Build Status](https://travis-ci.org/sumuttekno/gostruct.svg?branch=master)](https://travis-ci.org/sumuttekno/gostruct)
 [![codecov](https://codecov.io/gh/sumuttekno/gostruct/branch/master/graph/badge.svg)](https://codecov.io/gh/sumuttekno/gostruct)
