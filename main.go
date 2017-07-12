@@ -5,6 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/sumuttekno/gostruct/generator"
+	"github.com/sumuttekno/gostruct/generator/config"
+
 )
 
 func main() {
@@ -24,8 +26,6 @@ func main() {
 
 func addCommand(root *cobra.Command) {
 
-	fmt.Println("BBGA S")
-
 	var cmdGenerate = &cobra.Command{
 		Use:   "generate ",
 		Short: "Generate your Golang projects",
@@ -38,13 +38,17 @@ func addCommand(root *cobra.Command) {
 
 func generate(cmd *cobra.Command, args []string) {
 
-	source := "mysql"
-	user := "root"
-	password := "password"
-	host := "127.0.0.1"
-	port := "33060"
-	dbname := "article"
 
+	v := config.NewViperConfig()
+
+	source := v.GetString("type")
+	user := v.GetString("user")
+	password := v.GetString("password")
+	host := v.GetString("host")
+	port := v.GetString("port")
+	dbname := v.GetString("dbname")
+
+	fmt.Println("Generating Your Struct.......")
 	generateStruct(source, user, password, host, port, dbname)
 }
 func generateStruct(source string, user string, password string, host string, port string, dbname string) {
