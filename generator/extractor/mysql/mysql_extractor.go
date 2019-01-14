@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"time"
 
-	models "github.com/sumuttekno/gostruct/generator/model"
+	models "github.com/golangid/gostruct/generator/model"
 )
 
 type MysqlExtractor struct {

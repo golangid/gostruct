@@ -4,9 +4,9 @@ Struct Generator from database
 
 gostruct will generate struct from your DB
 
-[![Build Status](https://travis-ci.org/sumuttekno/gostruct.svg?branch=master)](https://travis-ci.org/sumuttekno/gostruct)
-[![codecov](https://codecov.io/gh/sumuttekno/gostruct/branch/master/graph/badge.svg)](https://codecov.io/gh/sumuttekno/gostruct)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/sumuttekno/gostruct/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/golangid/gostruct.svg?branch=master)](https://travis-ci.org/golangid/gostruct)
+[![codecov](https://codecov.io/gh/golangid/gostruct/branch/master/graph/badge.svg)](https://codecov.io/gh/golangid/gostruct)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/golangid/gostruct/blob/master/LICENSE)
 
 ## Index
 
@@ -14,7 +14,7 @@ gostruct will generate struct from your DB
 * [Getting Started](#getting-started)
 * [Example](#example)
 
-You can file an [Issue](https://github.com/sumuttekno/gostruct/issues/new).
+You can file an [Issue](https://github.com/golangid/gostruct/issues/new).
 
 ## Support
 Currently only support Mysql for now.
@@ -24,7 +24,7 @@ Currently only support Mysql for now.
 #### Download
 
 ```shell
-go get -u github.com/sumuttekno/gostruct
+go get -u github.com/golangid/gostruct
 ```
 ## Example
 

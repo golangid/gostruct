@@ -2,16 +2,16 @@ package generator
 
 import (
 	"database/sql"
-	"fmt" 
-	"go/build" 
+	"fmt"
+	"go/build"
 	"os"
 	"strings"
 	"text/template"
 
 	"github.com/Masterminds/sprig"
 	_ "github.com/go-sql-driver/mysql" //mysql driver
-	"github.com/sumuttekno/gostruct/generator/extractor/mysql"
-	models "github.com/sumuttekno/gostruct/generator/model"
+	"github.com/golangid/gostruct/generator/extractor/mysql"
+	models "github.com/golangid/gostruct/generator/model"
 )
 
 type Generator struct {
@@ -63,9 +63,9 @@ func (g *Generator) mysqlGenerator() {
 
 func (g *Generator) generateStruct(list []models.DataGenerator) {
 	if len(list) < 1 {
- 
+
 		panic("Table Not Exist")
- 
+
 	}
 
 	for i := 0; i < len(list); i++ {
@@ -75,11 +75,10 @@ func (g *Generator) generateStruct(list []models.DataGenerator) {
 }
 
 func (g *Generator) generateFile(dataSend *models.DataGenerator) {
- 
-	projectPackages := "github.com/sumuttekno/gostruct"
+
+	projectPackages := "github.com/golangid/gostruct"
 	temp, err := template.New("").Funcs(sprig.TxtFuncMap()).ParseFiles(build.Default.GOPATH + "/src/" + projectPackages + "/generator/struct_template.tpl")
- 
- 
+
 	if err != nil {
 		panic("Unknown Error " + err.Error())
 	}

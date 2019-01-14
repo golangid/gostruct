@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/golangid/gostruct/generator"
+	"github.com/golangid/gostruct/generator/config"
 	"github.com/spf13/cobra"
-	"github.com/sumuttekno/gostruct/generator"
-	"github.com/sumuttekno/gostruct/generator/config"
-
 )
 
 func main() {
@@ -37,7 +36,6 @@ func addCommand(root *cobra.Command) {
 }
 
 func generate(cmd *cobra.Command, args []string) {
-
 
 	v := config.NewViperConfig()
 
